@@ -19,6 +19,8 @@ int m21 = 30;            //minuto
 int m22 = 0;            //segundo
 
 WiFiUDP ntpUDP;
+
+//Adjusting to use the Brasilia time zone(GMT-3) > -3 * 60 * 60 = -10800
 NTPClient timeClient(ntpUDP, -10800);
 
 
